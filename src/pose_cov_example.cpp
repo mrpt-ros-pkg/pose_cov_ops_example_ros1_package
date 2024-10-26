@@ -15,10 +15,12 @@ int main(int argc, char **argv) {
   pose1.pose.position.x = 1.0;
   pose1.pose.position.y = 2.0;
   pose1.pose.position.z = 0.0;
+  pose1.pose.orientation.w = 1.0;
 
   pose2.pose.position.x = 0.5;
   pose2.pose.position.y = 1.5;
   pose2.pose.position.z = 0.0;
+  pose2.pose.orientation.w = 1.0;
 
   // Use pose_cov_ops to compose pose1 and pose2
   pose_cov_ops::compose(pose1, pose2, result_pose);
